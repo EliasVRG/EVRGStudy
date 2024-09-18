@@ -1,0 +1,387 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Essa documentação foi criada com o objetivo de auxiliar os iniciantes na utilização de diferentes recursos que tive experiência no meu dia a dia.">
+      
+      
+        <meta name="author" content="Elias Victor Rocha Garcia">
+      
+      
+        <link rel="canonical" href="https://EliasVRG.github.io/EVRStudy/GIT-E-GITHUB/Anota%C3%A7%C3%B5es%20sobre%20Git%20e%20Github/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+    
+    
+      
+        <title>Anotações Sobre Git e Github - EVRGStudy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anotacoes-sobre-git-e-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="EVRGStudy" class="md-header__button md-logo" aria-label="EVRGStudy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EVRGStudy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Anotações Sobre Git e Github
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/EliasVRG" class="md-tabs__link">
+        
+  
+    
+  
+  GitHub
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="EVRGStudy" class="md-nav__button md-logo" aria-label="EVRGStudy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    EVRGStudy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/EliasVRG" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="anotacoes-sobre-git-e-github">Anotações Sobre Git e Github</h1>
+<h2 id="como-fazer-login-no-git">Como fazer login no Git</h2>
+<p>A primeira coisa que você deve fazer ao instalar Git é configurar seu nome de usuário e endereço de e-mail. Isto é importante porque cada commit usa esta informação, e ela é carimbada de forma imutável nos commits que você começa a criar:</p>
+<p><strong>$ git config --global user.name "Fulano de Tal"</strong></p>
+<p><strong>$ git config --global user.email fulanodetal@exemplo.br</strong></p>
+<p>Reiterando, você precisará fazer isso somente uma vez se tiver usado a opção --global, porque então o Git usará esta informação para qualquer coisa que você fizer naquele sistema. Se você quiser substituir essa informação com nome diferente para um projeto específico, você pode rodar o comando sem a opção --global dentro daquele projeto.
+   Para conferir se o login foi feito corretamente deve se escrever:</p>
+<p><strong>$ git config --list</strong> </p>
+<p><strong>$ git config --local user.name "Nome da pessoa"</strong> (Este comando serve para que o nome da pessoal que esta moodificando seja apenas para um repositorio definido e não global.) </p>
+<hr />
+<p>## Comandos mais usados:
+   Estes são os comandos que servem para subir um arquivo para o Github pelo terminal Git Bash:</p>
+<p><strong>$ git init</strong> (serve para iniciar um repositório git na pasta em que se encontra os arquivos)</p>
+<p><strong>$ git add README.md</strong> (Não é necessario este comando, pois ele só ira adicionar um readme para leitura do usuário no git)</p>
+<p><strong>$ git commit -m "first commit"</strong> (Este comando serve para comitar os arquivos com uma mensagem entre "mensagem")</p>
+<p><strong>$ git branch -M main</strong> (Este comando serve para criar uma branch main e é necessario apenas no primeiro commit dos arquivos)</p>
+<p><strong>$ git remote add origin https://github.com/CaioGunz/teste.git</strong> (Este comando também só é utilizado no primeiro commit dos arquivos e deve ter o link onde está o repositorio do GitHub)</p>
+<p><strong>$ git push -u origin main</strong> (Este comando serve para subir os arquivos do Computador(Local) para o GitHub(remoto))</p>
+<p><strong>$ git status</strong> (é o comando em que verifica qual arquivo foi modificado e se ele ja foi comitado, caso não tenha sido o nome do arquivo vai aparecer em vermelhor, e depois de ser comitado ira aparecer em verde após rodar o este comando)</p>
+<p><strong>$ git pull (URL do repositório)</strong> (Serve para puxar um repositórios para um desktop local)</p>
+<p><strong>$ git clone (Endereço/URL)</strong> (Serve para clonar um repositório de um endereço)</p>
+<p><strong>$ git branch (nome do novo branch)</strong> (Serve para criar um novo branch(linha de desenvolvimento))</p>
+<p><strong>$ git checkout (Nome da Branch)</strong> (Serve para mudar em qual branch você está)</p>
+<p><strong>$ git merge  (nome da branch)</strong> (Serve para unir duas branch diferentes, no nome da branch deve ser colocado qual vai ser unida. Quando feito isso vai aparecer para confirmar apertando <strong>:x</strong>)</p>
+<p><strong>$ git rebase (nome da branch)</strong> (Serve para que o git una o commit citado com a master e a master passe a frente daquela branch e traz todos os commits da outra branch para a master junto com os que ela já possui e mantem o último trabalho feita na master)</p>
+<p><strong>$ git revert (has do commit)</strong> (Serve para reverter um commit que foi enviado com erro)</p>
+<hr />
+<h2 id="outros-comandos-do-git">Outros comandos do Git</h2>
+<p><strong>$ git checkout -- (nome do arquivo)</strong> (Serve para descartar as últimas alterações feitas)</p>
+<p><strong>$ git log</strong> (O comando para mostrar  os commits que foram feitos)</p>
+<p><strong>$ git log --oneline</strong> (É o comando para mostrar essas informações resumidas pode ser usado, assim será mostrado todos os commits sem informações adicionais)</p>
+<p><strong>$ git log -p</strong> (Para mostrar qual foram as modificações feitas no repositório)</p>
+<p><strong>$ git remote add (nome do repositorio) e a URL(de qualquer endereço)</strong> (Serve para adicionar um repositorio remoto pelo terminal git)</p>
+<p><strong>$ git remote</strong> (Serve para listar os repositorios)</p>
+<p><strong>$ git remote -v</strong> (Serve para mostrar o endereço do repositorio local)</p>
+<p><strong>$ git stash</strong> (Serve para armazenar temporariamente o que foi modificado  sem precisar commitar)</p>
+<p><strong>$ git stash list</strong> (Serve para mostrar a lista de stash salvo)</p>
+<p><strong>$ git stash pop</strong> (Serve para remover a ultima modificação feita e aplicar no arquivo)</p>
+<p><strong>$ git checkout (7 primeiros digitos do hash da branch)</strong> (Serve para navegar entre os commits)</p>
+<p><strong>$ git tag -a (versão) (-m "", não é obrigatório colocar uma mensagem)</strong> (Serve para marcar um release do código, tornando pronto para um usuário baixar)</p>
+<p><strong>$ git push (branch) (nome da release)</strong> (Serve para fazer um push de uma TAG/Release)</p>
+<hr />
+<h2 id="comandos-para-usar-no-terminal-do-git-serve-para-linux-tambem-e-navegarcriar-pastas-e-arquivos">Comandos para usar no terminal do git (serve para linux também) e Navegar/Criar pastas e arquivos</h2>
+<p><strong>cd ..</strong> serve para voltar uma pasta (ou subir como  alguns chamam)</p>
+<p><strong>mkdir (nome da pasta)</strong> serve para criar uma pasta</p>
+<hr />
+<h2 id="alguns-sites-para-ajudar-no-dia-a-dia-com-o-github">Alguns sites para ajudar no dia a dia com o GitHub:</h2>
+<p><a href="https://devhints.io/git-log">Git log cheatsheet</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,470 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Essa documentação foi criada com o objetivo de auxiliar os iniciantes na utilização de diferentes recursos que tive experiência no meu dia a dia.">
+      
+      
+        <meta name="author" content="Elias Victor Rocha Garcia">
+      
+      
+        <link rel="canonical" href="https://EliasVRG.github.io/EVRStudy/SQL/comunTablesExpression/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+    
+    
+      
+        <title>Comun Tables Expression - EVRGStudy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comun-tables-expression" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="EVRGStudy" class="md-header__button md-logo" aria-label="EVRGStudy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EVRGStudy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comun Tables Expression
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/EliasVRG" class="md-tabs__link">
+        
+  
+    
+  
+  GitHub
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="EVRGStudy" class="md-nav__button md-logo" aria-label="EVRGStudy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    EVRGStudy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/EliasVRG" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="comun-tables-expression">Comun Tables Expression</h1>
+<p>Exemplo:</p>
+<pre><code class="language-sql">WITH &quot;goals_created_up_to_week&quot; AS (
+    SELECT &quot;id&quot;, &quot;title&quot;, &quot;desired_weekly_frequency&quot;, &quot;created_at&quot;
+    FROM &quot;goals&quot;
+    WHERE &quot;goals&quot;.&quot;created_at&quot; &lt;= $1
+),
+&quot;goal_completion_counts&quot; AS (
+    SELECT &quot;goal_id&quot;, COUNT(&quot;id&quot;) AS &quot;completionCount&quot;
+    FROM &quot;goal_completions&quot;
+    WHERE (&quot;goal_completions&quot;.&quot;created_at&quot; &gt;= $2 AND &quot;goal_completions&quot;.&quot;created_at&quot; &lt;= $3)
+    GROUP BY &quot;goal_completions&quot;.&quot;goal_id&quot;
+)
+SELECT
+    &quot;goals_created_up_to_week&quot;.&quot;id&quot;,
+    &quot;goals_created_up_to_week&quot;.&quot;title&quot;,
+    &quot;goals_created_up_to_week&quot;.&quot;desired_weekly_frequency&quot;,
+    COALESCE(&quot;completionCount&quot;, 0)
+FROM &quot;goals_created_up_to_week&quot;
+LEFT JOIN &quot;goal_completion_counts&quot;
+ON &quot;goal_completion_counts&quot;.&quot;goal_id&quot; = &quot;goals_created_up_to_week&quot;.&quot;id&quot;
+</code></pre>
+<h3 id="explicacao-linha-a-linha">Explicação linha a linha:</h3>
+<h4 id="1-with-goals_created_up_to_week-as">1. <code>WITH "goals_created_up_to_week" AS (</code></h4>
+<p>Aqui, estamos criando uma Common Table Expression (CTE) chamada <code>goals_created_up_to_week</code>. Uma CTE é uma tabela temporária que só existe durante a execução da query. Esta CTE vai armazenar os dados dos objetivos que foram criados até uma determinada semana.</p>
+<h4 id="2-select-id-title-desired_weekly_frequency-created_at">2. <code>SELECT "id", "title", "desired_weekly_frequency", "created_at"</code></h4>
+<p>Selecionamos as colunas <code>id</code>, <code>title</code>, <code>desired_weekly_frequency</code> (frequência semanal desejada), e <code>created_at</code> (data de criação) da tabela <code>goals</code>.</p>
+<h4 id="3-from-goals">3. <code>FROM "goals"</code></h4>
+<p>Especifica que os dados estão sendo obtidos da tabela <code>goals</code>.</p>
+<h4 id="4-where-goalscreated_at-1">4. <code>WHERE "goals"."created_at" &lt;= $1</code></h4>
+<p>Filtra as metas que foram criadas até a data indicada pela variável <code>$1</code> (um valor que será passado na execução da query).</p>
+<h4 id="5">5. <code>),</code></h4>
+<p>Fecha a primeira CTE, chamada <code>goals_created_up_to_week</code>.</p>
+<h4 id="6-goal_completion_counts-as">6. <code>"goal_completion_counts" AS (</code></h4>
+<p>Iniciamos uma segunda CTE chamada <code>goal_completion_counts</code>, que será usada para calcular a contagem de realizações (completions) para cada meta.</p>
+<h4 id="7-select-goal_id-countid-as-completioncount">7. <code>SELECT "goal_id", COUNT("id") AS "completionCount"</code></h4>
+<p>Selecionamos a coluna <code>goal_id</code> da tabela <code>goal_completions</code> e contamos o número de realizações (<code>id</code>) para cada <code>goal_id</code>. Esta contagem é armazenada em uma coluna nomeada <code>completionCount</code>.</p>
+<h4 id="8-from-goal_completions">8. <code>FROM "goal_completions"</code></h4>
+<p>Especifica que os dados estão sendo obtidos da tabela <code>goal_completions</code>.</p>
+<h4 id="9-where-goal_completionscreated_at-2-and-goal_completionscreated_at-3">9. <code>WHERE ("goal_completions"."created_at" &gt;= $2 AND "goal_completions"."created_at" &lt;= $3)</code></h4>
+<p>Filtra as realizações de metas que ocorreram entre duas datas: uma data inicial (<code>$2</code>) e uma data final (<code>$3</code>).</p>
+<h4 id="10-group-by-goal_completionsgoal_id">10. <code>GROUP BY "goal_completions"."goal_id"</code></h4>
+<p>Agrupa os resultados por <code>goal_id</code> para que possamos contar as realizações por meta.</p>
+<h4 id="11">11. <code>)</code></h4>
+<p>Fecha a segunda CTE, chamada <code>goal_completion_counts</code>.</p>
+<h4 id="12-select">12. <code>SELECT</code></h4>
+<p>Iniciamos a parte final da query, onde vamos selecionar e combinar os dados das duas CTEs.</p>
+<h4 id="13-goals_created_up_to_weekid">13. <code>"goals_created_up_to_week"."id",</code></h4>
+<p>Seleciona o <code>id</code> da CTE <code>goals_created_up_to_week</code>.</p>
+<h4 id="14-goals_created_up_to_weektitle">14. <code>"goals_created_up_to_week"."title",</code></h4>
+<p>Seleciona o <code>title</code> (título) da CTE <code>goals_created_up_to_week</code>.</p>
+<h4 id="15-goals_created_up_to_weekdesired_weekly_frequency">15. <code>"goals_created_up_to_week"."desired_weekly_frequency",</code></h4>
+<p>Seleciona a <code>desired_weekly_frequency</code> (frequência semanal desejada) da CTE <code>goals_created_up_to_week</code>.</p>
+<h4 id="16-coalescecompletioncount-0">16. <code>COALESCE("completionCount", 0)</code></h4>
+<p>Esta linha utiliza a função <code>COALESCE</code> para garantir que, se uma meta não tiver realizações, o valor retornado para <code>completionCount</code> seja <code>0</code> em vez de <code>NULL</code>.</p>
+<h4 id="17-from-goals_created_up_to_week">17. <code>FROM "goals_created_up_to_week"</code></h4>
+<p>Especifica que os dados estão sendo obtidos da CTE <code>goals_created_up_to_week</code>.</p>
+<h4 id="18-left-join-goal_completion_counts">18. <code>LEFT JOIN "goal_completion_counts"</code></h4>
+<p>Faz um <code>LEFT JOIN</code> com a CTE <code>goal_completion_counts</code>, que contém as contagens de realizações de metas. O <code>LEFT JOIN</code> garante que todas as metas sejam incluídas, mesmo se não houver realizações associadas.</p>
+<h4 id="19-on-goal_completion_countsgoal_id-goals_created_up_to_weekid">19. <code>ON "goal_completion_counts"."goal_id" = "goals_created_up_to_week"."id"</code></h4>
+<p>Especifica que a junção deve ser feita onde o <code>goal_id</code> na CTE <code>goal_completion_counts</code> corresponde ao <code>id</code> na CTE <code>goals_created_up_to_week</code>.</p>
+<hr />
+<h3 id="resumo-do-que-a-query-faz">Resumo do que a query faz:</h3>
+<ol>
+<li>Obtém todas as metas que foram criadas até uma determinada data (<code>$1</code>).</li>
+<li>Conta quantas vezes cada meta foi completada dentro de um intervalo de tempo específico (<code>$2</code> a <code>$3</code>).</li>
+<li>Combina essas duas informações e retorna o <code>id</code>, <code>title</code>, <code>desired_weekly_frequency</code>, e a contagem de completions (ou 0 se não houver completions).</li>
+</ol>
+<p>Esse formato de query é útil para gerar relatórios ou dashboards que mostram o progresso das metas ao longo do tempo.</p>
+<hr />
+<p>Este tipo de query, que utiliza <strong>Common Table Expressions (CTEs)</strong>, é indicado em situações específicas e possui tanto vantagens quanto desvantagens, dependendo do cenário de uso.</p>
+<h3 id="quando-e-indicado-usar-este-tipo-de-query">Quando é indicado usar este tipo de query:</h3>
+<ol>
+<li><strong>Leitura clara e manutenção</strong>:</li>
+<li>
+<p>Se você está lidando com uma query complexa e precisa dividir a lógica em partes mais compreensíveis, as CTEs permitem organizar o código SQL de forma mais legível. Cada CTE atua como uma tabela temporária, o que torna a query mais modular e fácil de entender.</p>
+</li>
+<li>
+<p><strong>Reutilização de subconsultas</strong>:</p>
+</li>
+<li>
+<p>Quando há a necessidade de reutilizar o mesmo conjunto de dados várias vezes na query. Usar CTEs permite que você calcule uma vez e referencie a mesma tabela temporária em diferentes partes da consulta, ao invés de duplicar a lógica.</p>
+</li>
+<li>
+<p><strong>Cálculos intermediários</strong>:</p>
+</li>
+<li>
+<p>Quando a query exige cálculos intermediários, como agregações ou contagens baseadas em dados temporários, as CTEs ajudam a criar esses blocos de lógica antes de executar a consulta final.</p>
+</li>
+<li>
+<p><strong>Hierarquias e dados recursivos</strong>:</p>
+</li>
+<li>
+<p>CTEs recursivas (não aplicável no seu exemplo específico) são extremamente úteis para trabalhar com estruturas de dados hierárquicas, como árvores ou gráficos, onde uma consulta simples pode não ser suficiente.</p>
+</li>
+<li>
+<p><strong>Consultas complexas envolvendo agregações</strong>:</p>
+</li>
+<li>Quando você está lidando com várias operações de agregação que precisam ser combinadas (como a contagem de completions para cada meta), CTEs são uma boa escolha para organizar a query em etapas.</li>
+</ol>
+<h3 id="quando-nao-e-indicado-usar-este-tipo-de-query">Quando <strong>não</strong> é indicado usar este tipo de query:</h3>
+<ol>
+<li><strong>Desempenho em consultas frequentes</strong>:</li>
+<li>
+<p>CTEs podem não ser eficientes em termos de desempenho, especialmente se as subconsultas forem grandes e a query for executada frequentemente. Em alguns bancos de dados, CTEs não são materializadas (armazenadas temporariamente) e são reexecutadas toda vez que são referenciadas, o que pode resultar em sobrecarga.</p>
+</li>
+<li>
+<p><strong>Consultas simples</strong>:</p>
+</li>
+<li>
+<p>Se a consulta é simples o suficiente para ser resolvida com uma ou duas junções (<code>JOINs</code>), o uso de CTEs pode ser um exagero e complicar desnecessariamente a query. Nesse caso, é mais eficiente e direto usar <code>JOINs</code> regulares.</p>
+</li>
+<li>
+<p><strong>Cenários de tempo real e alta performance</strong>:</p>
+</li>
+<li>
+<p>Se o seu sistema requer respostas em tempo real e precisa de alta performance (como em um sistema crítico de alta concorrência), CTEs podem introduzir uma latência indesejada. Nestes casos, seria mais indicado usar índices ou otimizações específicas no banco de dados.</p>
+</li>
+<li>
+<p><strong>Consulta com grande volume de dados</strong>:</p>
+</li>
+<li>
+<p>Se as subconsultas nas CTEs resultam em grandes volumes de dados, a query pode se tornar lenta, principalmente se não houver índices apropriados. Dependendo do banco de dados, <code>CTEs</code> podem ser menos otimizadas em comparação com junções normais.</p>
+</li>
+<li>
+<p><strong>Sistemas que suportam <em>materialized views</em> ou cache</strong>:</p>
+</li>
+<li>Se você tem acesso a <em>materialized views</em> (visões materializadas) ou tabelas temporárias, pode ser mais vantajoso pré-computar os resultados complexos e armazená-los em uma <em>view</em> materializada do que usar CTEs repetidamente.</li>
+</ol>
+<h3 id="conclusao">Conclusão:</h3>
+<p>Este tipo de query é ideal quando você precisa de organização e clareza em consultas complexas, onde cálculos intermediários são necessários. No entanto, não é recomendado para cenários onde o desempenho é crítico, ou se a consulta pode ser simplificada com junções ou agregações diretas.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
