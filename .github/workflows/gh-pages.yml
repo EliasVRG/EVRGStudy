@@ -3,7 +3,7 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ou o nome do seu branch principal
+      - gh-pages  # Ou o nome do seu branch principal
 
 jobs:
   deploy:
