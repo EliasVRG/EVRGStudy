@@ -1,91 +1,71 @@
-# Home
+# EVRGStudy
 
-### Sobre essa documentação
+Bem-vindo ao **EVRGStudy**, um espaço para documentar e compartilhar anotações sobre diversos tópicos estudados ao longo do tempo. Esta documentação não é técnica, mas serve como referência para estudos e práticas adquiridas.
 
-Esses documentos tem como objetivo de guardar dados sobre meus estudos ao longo do tempo, não é nada tecnico apenas para ter onde procurar.
+## Seções de Estudo
 
-# Sobre Qlik:
+---
 
-[Estudo e link sobre Qlik](./QLIK/Estudos%20Qlik.md)
+### Git e Github
+- [Estudos sobre Git e Github](./GIT-E-GITHUB/Anotações%20sobre%20Git%20e%20Github.md)
+- [Correções de Merge](./GIT-E-GITHUB/correçõesDeMerge.md)
 
-[Fórmulas Resolvidas](./QLIK/Formulas%20resolvidas.md)
+---
 
-[Link das Issues: Issue Qlik](https://github.com/CaioGunz/Study/issues/2#issue-2057726169)
+### Python
+- [Estudos e Libs Python](./PYTHON/Estudos%20e%20Libs%20Python.md)
+- [Estudos sobre Diagrama de Classes](./PYTHON/Diagrama%20de%20Classes.md)
+- [Método Melt()](./PYTHON/Método%20Melt.md)
 
-# Sobre Python:
-[Estudos e Libs Python](./PYTHON/Estudos%20e%20Libs%20Python.md)
+---
 
-[Estudos sobre Diagrama de Classes](./PYTHON/Diagrama%20de%20Classes.md)
+### Gestão Ágil
+- [Estudos de SCRUM](./PYTHON/Estudos%20Scrum.md)
 
-[Estudos sobre Git e Github](./PYTHON/Anotações%20sobre%20Git%20e%20Github.md)
+---
 
-[Metodo Melt()](./PYTHON/Método%20Melt.md)
+### SQL
+- [Comandos SQL](./SQL/Metodos%20utilizados.md)
+- [Common Table Expression](./SQL/comunTablesExpression.md)
 
-# Sobre gestão Agil:
-[Estudos de SCRUM](./PYTHON/Estudos%20Scrum.md)
+---
 
-# Sobre Power BI
-[Como calcular hora para KPI e Gráficos](./POWER%20BI/Calculo%20de%20Horas%20-%20Acima%20de%2024h.md)
+### Estatística
+- [Análise de Pareto](./ESTATISTICA/Analise%20de%20Pareto.md)
+- [Base de Dados Grátis](./ESTATISTICA/Base%20de%20Dados%20-%20gratis.md)
+- [Estudos de Data Science](./ESTATISTICA/Estudos%20Sobre%20Data%20Science.md)
+- [Estudo sobre Gráficos](./ESTATISTICA/Graficos.md)
+- [Gráfico de Pizza](./ESTATISTICA/Grafico%20de%20Pizza.md)
+- [Gráfico de Barras](./ESTATISTICA/Grafico%20de%20Barras.md)
+- [Mapa de Árvore (Treemap)](./ESTATISTICA/Mapa%20de%20Arvore(treemap).md)
+- [Múltiplos Pequenos](./ESTATISTICA/Multiplos%20Pequenos.md)
+- [Métricas com DAX](./ESTATISTICA/Métricas%20com%20DAX.md)
 
-[Contexto de Linha X Contexto de Filtro X Iteração](./POWER%20BI/Contexto%20de%20Linha%20X%20Contexto%20de%20Filtro%20X%20Iteração.md)
+---
 
-[Coluna Calculada X Medida](./POWER%20BI/Coluna%20Calculada%20x%20Medidas.md)
+### Power BI
+- [Cálculo de Horas para KPI](./POWER%20BI/Calculo%20de%20Horas%20-%20Acima%20de%2024h.md)
+- [Contexto de Linha vs Filtro](./POWER%20BI/Contexto%20de%20Linha%20X%20Contexto%20de%20Filtro%20X%20Iteração.md)
+- [Coluna Calculada vs Medida](./POWER%20BI/Coluna%20Calculada%20x%20Medidas.md)
+- [Funções BLANK e ISBLANK](./POWER%20BI/Funções%20BLANK%20e%20ISBLANK.md)
+- [Tipos de Dados no DAX](./POWER%20BI/Tipos%20de%20Dados%20no%20DAX.md)
 
-[Contexto](./POWER%20BI/Contextos.md)
+---
 
-[COnfigurações de Link](./POWER%20BI/Configurações%20de%20Link.md)
+### Qlik
+- [Estudos e Links sobre Qlik](./QLIK/Estudos%20Qlik.md)
+- [Fórmulas Resolvidas](./QLIK/Formulas%20resolvidas.md)
 
-[Diferença entre Duplicar e Manipular uma Coluna](./POWER%20BI/Diferenca%20de%20Duplicar%20e%20Manipular%20uma%20Tabela.md)
+---
 
-[Estudos Sobre Power BI](./POWER%20BI/Estudos%20Power%20BI.md)
+### Linux
+- [Comandos mais usados no Linux](./LINUX/COMANDOS%20LINUX.md)
 
-[Funções BLANK e ISBLANK](./POWER%20BI/Funções%20BLANK%20e%20ISBLANK.md)
+---
 
-[Funções para Conversão de Tipo](./POWER%20BI/Funções%20para%20Conversão%20de%20Tipo.md)
+### Soft Skills
+- [Pontos Fortes](./SoftSkill/softskills.md)
 
-[Função RELATED](./POWER%20BI/Função%20RELATED.md)
+---
 
-[Função VALUE e DISTINCT](./POWER%20BI/Função%20VALUES%20e%20DISTINCT.md)
-
-[Funções Iteradoras](./POWER%20BI/Funções%20Iteradoras.md)
-
-[KeepFilter](./POWER%20BI/KeepFilter.md)
-
-[Layout Móvel](./POWER%20BI/Layout%20Mobile.md)
-
-[Medida Implicita e Explicita](./POWER%20BI/Medida%20Implicita%20e%20Explicita.md)
-
-[Principais Formulas](./POWER%20BI/Principais%20Formulas.md)
-
-[Tipos de Junção na Mesclagem do Power BI](./POWER%20BI/Tipos%20de%20Junção%20na%20Mesclagem%20do%20Power%20BI.md)
-
-[Tipos de Dados no DAX](./POWER%20BI/Tipos%20de%20Dados%20no%20DAX.md)
-
-[Tooltip](./POWER%20BI/Tooltip.md)
-
-# Sobre SQL:
-[Comandos SQL](./SQL/Metodos%20utilizados.md)
-
-# Sobre Estatistica:
-
-[Análise de Pareto](./ESTATISTICA/Analise%20de%20Pareto.md)
-
-[Base de Dados Gratis Diversas Fontes](./ESTATISTICA/Base%20de%20Dados%20-%20gratis.md)
-
-[Estudos de Data Science](./ESTATISTICA/Estudos%20Sobre%20Data%20Science.md)
-
-[Estudo sobre Gráficos](./ESTATISTICA/Graficos.md)
-
-[Estudo sobre Gráfico de Pizza](./ESTATISTICA/Grafico%20de%20Pizza.md)
-
-[Estudo sobre Gráfico de Barras](./ESTATISTICA/Grafico%20de%20Barras.md)
-
-[Estudo sobre Mapa de Arvore(Treemap)](./ESTATISTICA/Mapa%20de%20Arvore(treemap).md)
-
-[Estudos sobre Multiplos Pequenos](./ESTATISTICA/Multiplos%20Pequenos.md)
-
-[Métricas com DAX](./ESTATISTICA/Métricas%20com%20DAX.md)
-
-# Sobre Linux:
-
-[Comando que mais uso no Linux](./LINUX/COMANDOS%20LINUX.md)
+Sinta-se à vontade para explorar os links e aprender mais sobre cada um dos tópicos abordados.

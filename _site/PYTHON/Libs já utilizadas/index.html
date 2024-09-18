@@ -1,0 +1,2013 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Essa documentação foi criada com o objetivo de auxiliar os iniciantes na utilização de diferentes recursos que tive experiência no meu dia a dia.">
+      
+      
+        <meta name="author" content="Elias Victor Rocha Garcia">
+      
+      
+        <link rel="canonical" href="https://evrg-study.com/PYTHON/Libs%20j%C3%A1%20utilizadas/">
+      
+      
+        <link rel="prev" href="../Estudos%20e%20Libs%20Python/">
+      
+      
+        <link rel="next" href="../M%C3%A9todo%20Melt/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+    
+    
+      
+        <title>Conhecimentos obtidos em Scripts Python - EVRGStudy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conhecimentos-obtidos-em-scripts-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="EVRGStudy" class="md-header__button md-logo" aria-label="EVRGStudy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EVRGStudy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conhecimentos obtidos em Scripts Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ESTATISTICA/Analise%20de%20Pareto/" class="md-tabs__link">
+          
+  
+  ESTATISTICA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../GIT-E-GITHUB/Anota%C3%A7%C3%B5es%20sobre%20Git%20e%20Github/" class="md-tabs__link">
+          
+  
+  GIT E GITHUB
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../LINUX/COMANDOS%20LINUX/" class="md-tabs__link">
+          
+  
+  LINUX
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../POWER%20BI/Calculo%20de%20Horas%20-%20Acima%20de%2024h/" class="md-tabs__link">
+          
+  
+  POWER BI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Diagrama%20de%20Classes/" class="md-tabs__link">
+          
+  
+  PYTHON
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../QLIK/Estudos%20Qlik/" class="md-tabs__link">
+          
+  
+  QLIK
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../SQL/Metodos%20utilizados/" class="md-tabs__link">
+          
+  
+  SQL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../SoftSkill/softskills/" class="md-tabs__link">
+          
+  
+  SoftSkill
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="EVRGStudy" class="md-nav__button md-logo" aria-label="EVRGStudy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    EVRGStudy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ESTATISTICA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            ESTATISTICA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Analise%20de%20Pareto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: a Análise de Pareto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Base%20de%20Dados%20-%20gratis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para pegar bases de dados gratis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Estudos%20Sobre%20Data%20Science/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estudos sobre Data Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Grafico%20de%20Barras/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gráfico de Barras Empilhadas e Clusterizada
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Grafico%20de%20Pizza/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gráfico de Pizza
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Graficos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gráficos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Mapa%20de%20Arvore%28treemap%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Mapa de Árvore (Treemap)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/Multiplos%20Pequenos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Múltiplos Pequeno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESTATISTICA/M%C3%A9tricas%20com%20DAX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: médtricas com DAX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GIT E GITHUB
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            GIT E GITHUB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GIT-E-GITHUB/Anota%C3%A7%C3%B5es%20sobre%20Git%20e%20Github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anotações Sobre Git e Github
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GIT-E-GITHUB/corre%C3%A7%C3%B5esDeMerge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Correções de Merge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    LINUX
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            LINUX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LINUX/COMANDOS%20LINUX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comandos Básicos do Linux (Meu uso)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    POWER BI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            POWER BI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Calculo%20de%20Horas%20-%20Acima%20de%2024h/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cálculo de Horas no Power BI - Acima de 24h
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Coluna%20Calculada%20x%20Medidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coluna Calculada x Medidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Configura%C3%A7%C3%B5es%20de%20Link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurações de Link
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Contexto%20de%20Linha%20X%20Contexto%20de%20Filtro%20X%20Itera%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: Contexto de linha x Contexto de filtro x Iteração
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Contextos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: Contextos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Diferenca%20de%20Duplicar%20e%20Manipular%20uma%20Tabela/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diferenca de Duplicar e Manipular uma Tabela
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Estudos%20Power%20BI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estudos Power BI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Fun%C3%A7%C3%A3o%20RELATED/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: a função RELATED
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Fun%C3%A7%C3%A3o%20VALUES%20e%20DISTINCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PAra saber mais: funções que retornam tabelas (Values e Distinct)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Fun%C3%A7%C3%B5es%20BLANK%20e%20ISBLANK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utilizando as funções BLANK e ISBLANK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Fun%C3%A7%C3%B5es%20Iteradoras/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: as funções iteradoras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Fun%C3%A7%C3%B5es%20de%20Modofical%C3%A7%C3%A3o%20de%20Filtros%20de%20DAX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: Categoria de funções de modificação de filtros em DAX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Fun%C3%A7%C3%B5es%20para%20Convers%C3%A3o%20de%20Tipo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Funções para conversão de tipo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/KeepFilter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: KeepFilter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Layout%20Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layout Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Medida%20Implicita%20e%20Explicita/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Medidas Implícitas e Explícitas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Tipos%20de%20Dados%20no%20DAX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: Tipos de Dados no DAX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Tipos%20de%20Jun%C3%A7%C3%A3o%20na%20Mesclagem%20do%20Power%20BI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tipos de Junção na Mesclagem do Power BI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../POWER%20BI/Tooltip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Para saber mais: tooltip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PYTHON
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            PYTHON
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Diagrama%20de%20Classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conhecendo Diagrama de Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Estudos%20Scrum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conhecendo o SCRUM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Estudos%20e%20Libs%20Python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estudos e Libs Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Conhecimentos obtidos em Scripts Python
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Conhecimentos obtidos em Scripts Python
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importando-bibliotecas" class="md-nav__link">
+    Importando Bibliotecas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-de-funcoes" class="md-nav__link">
+    Definição de Funções
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inicializacao-e-configuracoes" class="md-nav__link">
+    Inicialização e Configurações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leitura-e-manipulacao-de-pdfs" class="md-nav__link">
+    Leitura e Manipulação de PDFs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consultas-ao-banco-de-dados-oracle" class="md-nav__link">
+    Consultas ao Banco de Dados Oracle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulacao-de-dataframes" class="md-nav__link">
+    Manipulação de DataFrames
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interacao-com-interface-grafica" class="md-nav__link">
+    Interação com Interface Gráfica
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envio-de-e-mails" class="md-nav__link">
+    Envio de E-mails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tratamento-de-excecoes" class="md-nav__link">
+    Tratamento de Exceções
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tempo-de-execucao" class="md-nav__link">
+    Tempo de Execução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automacao-de-navegacao-web-e-download-de-arquivos" class="md-nav__link">
+    Automação de Navegação Web e Download de Arquivos
+  </a>
+  
+    <nav class="md-nav" aria-label="Automação de Navegação Web e Download de Arquivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bibliotecas-utilizadas" class="md-nav__link">
+    Bibliotecas Utilizadas:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades" class="md-nav__link">
+    Funcionalidades:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consulta-a-bancos-de-dados-oracle" class="md-nav__link">
+    Consulta a Bancos de Dados Oracle
+  </a>
+  
+    <nav class="md-nav" aria-label="Consulta a Bancos de Dados Oracle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bibliotecas-utilizadas_1" class="md-nav__link">
+    Bibliotecas Utilizadas:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades_1" class="md-nav__link">
+    Funcionalidades:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observacoes_1" class="md-nav__link">
+    Observações:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyinstaller" class="md-nav__link">
+    PyInstaller:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-py-to-exe" class="md-nav__link">
+    auto-py-to-exe:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sobre-a-biblioteca-asposecells" class="md-nav__link">
+    Sobre a biblioteca Aspose.Cells
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../M%C3%A9todo%20Melt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resumo Método melt()
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    QLIK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            QLIK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QLIK/Estudos%20Qlik/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estudos Qlik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SQL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            SQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SQL/Metodos%20utilizados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conhecimentos obtidos em Consultas SQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SQL/comunTablesExpression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comun Tables Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SoftSkill
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            SoftSkill
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SoftSkill/softskills/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pontos Fortes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="conhecimentos-obtidos-em-scripts-python">Conhecimentos obtidos em Scripts Python</h1>
+<h2 id="importando-bibliotecas">Importando Bibliotecas</h2>
+<ul>
+<li><code>pyautogui</code>: Para automação de tarefas no sistema operacional.</li>
+<li><code>datetime</code>, <code>timedelta</code>: Para manipulação de datas e tempos.</li>
+<li><code>pandas</code>: Para manipulação de dados tabulares.</li>
+<li><code>tabulate</code>: Para formatar e exibir tabelas.</li>
+<li><code>email.mime.multipart</code>, <code>email.mime.text</code>, <code>smtplib</code>: Para enviar e-mails.</li>
+<li><code>ast</code>: Para manipulação de árvores sintáticas abstratas.</li>
+<li><code>traceback</code>: Para exibir mensagens de erro detalhadas.</li>
+<li><code>dotenv</code>: Para carregar variáveis de ambiente a partir de um arquivo <code>.env</code>.</li>
+<li><code>sleep</code>: Para pausar a execução do programa.</li>
+</ul>
+<h2 id="definicao-de-funcoes">Definição de Funções</h2>
+<ul>
+<li><code>main()</code>: Função principal que coordena todo o processo.</li>
+<li><code>define_execution_time(start_time, end_time)</code>: Função para calcular o tempo de execução.</li>
+</ul>
+<h2 id="inicializacao-e-configuracoes">Inicialização e Configurações</h2>
+<ul>
+<li>Carregamento de configurações universais a partir de um arquivo <code>.env</code>.</li>
+<li>Mapeamento dos nomes dos meses em inglês para português.</li>
+<li>Obtenção do nome do mês atual em inglês e sua tradução para português.</li>
+<li>Definição de caminhos para arquivos PDF com base na data atual.</li>
+</ul>
+<h2 id="leitura-e-manipulacao-de-pdfs">Leitura e Manipulação de PDFs</h2>
+<ul>
+<li>Leitura e identificação de arquivos PDF em um diretório.</li>
+<li>Extração de dados de PDFs e conversão para DataFrame do Pandas.</li>
+</ul>
+<h2 id="consultas-ao-banco-de-dados-oracle">Consultas ao Banco de Dados Oracle</h2>
+<ul>
+<li>Consulta de dados por ID.</li>
+<li>Consulta de guias baixadas.</li>
+</ul>
+<h2 id="manipulacao-de-dataframes">Manipulação de DataFrames</h2>
+<ul>
+<li>Atualização de valores em um DataFrame com base em resultados de consultas.</li>
+<li>Concatenação de DataFrames.</li>
+<li>Remoção de linhas duplicadas.</li>
+</ul>
+<h2 id="interacao-com-interface-grafica">Interação com Interface Gráfica</h2>
+<ul>
+<li>Automatização do preenchimento de formulários em uma aplicação.</li>
+</ul>
+<h2 id="envio-de-e-mails">Envio de E-mails</h2>
+<ul>
+<li>Envio de e-mails com base nos resultados obtidos.</li>
+</ul>
+<h2 id="tratamento-de-excecoes">Tratamento de Exceções</h2>
+<ul>
+<li>Tratamento de exceções e registro de erros em caso de falha na execução.</li>
+</ul>
+<h2 id="tempo-de-execucao">Tempo de Execução</h2>
+<ul>
+<li>Cálculo do tempo de execução do programa.</li>
+</ul>
+<h2 id="automacao-de-navegacao-web-e-download-de-arquivos">Automação de Navegação Web e Download de Arquivos</h2>
+<h3 id="bibliotecas-utilizadas">Bibliotecas Utilizadas:</h3>
+<ul>
+<li><code>playwright</code>: Utilizada para automatizar a navegação web e interagir com elementos da página.</li>
+<li><code>time</code>: Utilizada para adicionar atrasos na execução do script.</li>
+<li><code>re</code>: Utilizada para trabalhar com expressões regulares, permitindo a busca por padrões específicos no texto HTML.</li>
+<li><code>os</code>: Utilizada para lidar com operações relacionadas ao sistema operacional, como salvar arquivos em um diretório específico.</li>
+</ul>
+<h3 id="funcionalidades">Funcionalidades:</h3>
+<ol>
+<li><strong>Inicialização do Navegador e Página Web:</strong></li>
+<li>O script inicia um navegador Chromium headless usando o Playwright.</li>
+<li>
+<p>Em seguida, navega até a página de login de um site específico (<code>https://cn.vibraenergia.com.br/login/</code>).</p>
+</li>
+<li>
+<p><strong>Autenticação:</strong></p>
+</li>
+<li>Preenche os campos de usuário e senha em campos específicos do formulário de login.</li>
+<li>
+<p>Realiza o login clicando no botão de acesso.</p>
+</li>
+<li>
+<p><strong>Extração de URL:</strong></p>
+</li>
+<li>Extrai uma URL de uma página HTML específica.</li>
+<li>
+<p>Utiliza expressões regulares para localizar e extrair a URL de uma tag específica.</p>
+</li>
+<li>
+<p><strong>Navegação e Interatividade:</strong></p>
+</li>
+<li>Navega para a URL extraída.</li>
+<li>
+<p>Interage com a página, clicando em elementos específicos.</p>
+</li>
+<li>
+<p><strong>Preenchimento de Campos:</strong></p>
+</li>
+<li>Preenche campos de formulário com informações relevantes, como ano, código, etc.</li>
+<li>
+<p>Utiliza a biblioteca <code>pyautogui</code> para simular a digitação e pressionar teclas de tabulação e retorno.</p>
+</li>
+<li>
+<p><strong>Download de Arquivos:</strong></p>
+</li>
+<li>Clica em um elemento específico para iniciar o download de um arquivo.</li>
+<li>Utiliza a função <code>expect_download()</code> para esperar até que o download seja concluído.</li>
+<li>
+<p>Salva o arquivo baixado em um diretório específico, usando a função <code>save_as()</code>.</p>
+</li>
+<li>
+<p><strong>Finalização do Navegador:</strong></p>
+</li>
+<li>Fecha o navegador após concluir todas as operações.</li>
+</ol>
+<h3 id="observacoes">Observações:</h3>
+<ul>
+<li>O script demonstra um exemplo de automação de tarefas repetitivas em um navegador web, incluindo preenchimento de formulários, navegação e download de arquivos.</li>
+<li>É importante observar que a automação de navegação web deve ser realizada com cuidado para evitar violações de segurança e respeitar os termos de uso dos sites.</li>
+</ul>
+<h2 id="consulta-a-bancos-de-dados-oracle">Consulta a Bancos de Dados Oracle</h2>
+<h3 id="bibliotecas-utilizadas_1">Bibliotecas Utilizadas:</h3>
+<ul>
+<li><code>oracledb</code>: Utilizada para conectar e interagir com bancos de dados Oracle.</li>
+<li><code>datetime</code>: Utilizada para manipulação de datas e horas.</li>
+<li><code>pandas</code>: Utilizada para manipulação e análise de dados tabulares.</li>
+</ul>
+<h3 id="funcionalidades_1">Funcionalidades:</h3>
+<ol>
+<li><strong>Consulta Básica:</strong></li>
+<li>Realiza uma consulta a um banco de dados Oracle para recuperar informações específicas.</li>
+<li>Utiliza o módulo <code>oracledb</code> para estabelecer uma conexão com o banco de dados.</li>
+<li>Executa uma consulta SQL personalizada para buscar dados com base em critérios específicos.</li>
+<li>Os resultados da consulta são processados e retornados como um objeto DataFrame do Pandas.</li>
+<li>
+<p>Os resultados são formatados conforme necessário, como a formatação da coluna de data.</p>
+</li>
+<li>
+<p><strong>Consulta com Parâmetros:</strong></p>
+</li>
+<li>Aceita parâmetros adicionais para filtrar os resultados da consulta.</li>
+<li>
+<p>Os parâmetros são usados na cláusula WHERE da consulta SQL para restringir os resultados.</p>
+</li>
+<li>
+<p><strong>Manipulação dos Resultados:</strong></p>
+</li>
+<li>Os resultados da consulta são recuperados e armazenados em um DataFrame do Pandas.</li>
+<li>As colunas do DataFrame são renomeadas conforme necessário para melhor legibilidade.</li>
+<li>
+<p>Qualquer manipulação adicional dos dados pode ser realizada usando as funcionalidades do Pandas.</p>
+</li>
+<li>
+<p><strong>Tratamento de Erros:</strong></p>
+</li>
+<li>O script inclui tratamento de exceções para lidar com erros potenciais durante a execução da consulta.</li>
+<li>Em caso de erro, uma mensagem de erro é exibida, e o script retorna <code>None</code>.</li>
+</ol>
+<h3 id="observacoes_1">Observações:</h3>
+<ul>
+<li>A biblioteca <code>oracledb</code> é específica para interação com bancos de dados Oracle e oferece uma interface simples para executar consultas SQL e recuperar resultados.</li>
+<li>O uso do Pandas permite uma manipulação fácil e eficiente dos dados recuperados da consulta, incluindo filtragem, ordenação e transformações.</li>
+<li>O tratamento de erros ajuda a garantir que o script possa lidar adequadamente com situações inesperadas, como falhas na conexão com o banco de dados ou consultas mal-sucedidas.</li>
+</ul>
+<h3 id="pyinstaller">PyInstaller:</h3>
+<p>O PyInstaller é uma ferramenta que permite converter scripts Python em executáveis independentes para várias plataformas, incluindo Windows, macOS e Linux. Ele é especialmente útil quando você deseja distribuir seu código Python para usuários que não têm Python instalado em seus sistemas.</p>
+<p>Principais características do PyInstaller:</p>
+<ol>
+<li>
+<p><strong>Suporte Multiplataforma</strong>: O PyInstaller é capaz de criar executáveis para Windows, macOS e Linux a partir do mesmo código-fonte Python.</p>
+</li>
+<li>
+<p><strong>Empacotamento de Dependências</strong>: Ele analisa automaticamente as dependências do seu projeto Python e as inclui no executável, facilitando a distribuição do software.</p>
+</li>
+<li>
+<p><strong>Facilidade de Uso</strong>: O processo de conversão de um script Python em um executável é simples e pode ser feito com apenas alguns comandos.</p>
+</li>
+<li>
+<p><strong>Integração com Ambientes Virtuais</strong>: O PyInstaller pode trabalhar com ambientes virtuais do Python, garantindo que as dependências do seu projeto sejam isoladas e incluídas corretamente no executável.</p>
+</li>
+<li>
+<p><strong>Personalização Avançada</strong>: Ele oferece várias opções para personalizar o processo de criação do executável, como a definição de ícones, descrições e outras propriedades do arquivo final.</p>
+</li>
+</ol>
+<h3 id="auto-py-to-exe">auto-py-to-exe:</h3>
+<p>O auto-py-to-exe é uma interface gráfica para o PyInstaller que simplifica ainda mais o processo de criação de executáveis a partir de scripts Python. Ele oferece uma experiência amigável ao usuário, permitindo que você converta seus scripts em executáveis com apenas alguns cliques.</p>
+<p>Principais características do auto-py-to-exe:</p>
+<ol>
+<li>
+<p><strong>Interface Gráfica Intuitiva</strong>: O auto-py-to-exe possui uma interface fácil de usar, com opções claras e simples para configurar o processo de criação do executável.</p>
+</li>
+<li>
+<p><strong>Pré-configurações Personalizáveis</strong>: Ele fornece várias pré-configurações que você pode ajustar de acordo com suas necessidades, como a inclusão de dependências adicionais, a definição de ícones e a escolha do modo de execução.</p>
+</li>
+<li>
+<p><strong>Visualização do Script</strong>: Antes de criar o executável, o auto-py-to-exe permite visualizar o código-fonte do script Python e fazer ajustes, se necessário.</p>
+</li>
+<li>
+<p><strong>Compatibilidade com PyInstaller</strong>: Por trás da interface gráfica, o auto-py-to-exe utiliza o PyInstaller para gerar os executáveis, garantindo a mesma funcionalidade e confiabilidade.</p>
+</li>
+<li>
+<p><strong>Suporte da Comunidade</strong>: O auto-py-to-exe é mantido por uma comunidade ativa e recebe atualizações regulares, o que significa que você pode obter suporte e novos recursos com frequência.</p>
+</li>
+</ol>
+<h3 id="sobre-a-biblioteca-asposecells">Sobre a biblioteca Aspose.Cells</h3>
+<p>A biblioteca Aspose.Cells é uma ferramenta poderosa para trabalhar com planilhas do Excel em Python. Ela permite ler, escrever, modificar e formatar dados em arquivos do Excel, oferecendo uma ampla gama de funcionalidades para manipulação de planilhas.</p>
+<p>No código fornecido, a biblioteca Aspose.Cells é utilizada para trabalhar com arquivos do Excel. Aqui está um resumo das principais funcionalidades do código:</p>
+<ol>
+<li><strong>Leitura e Modificação de Planilhas</strong>:</li>
+<li>O código lê dados de planilhas Excel usando a classe <code>Workbook</code> da biblioteca Aspose.Cells.</li>
+<li>
+<p>Ele remove colunas indesejadas e formata os dados conforme necessário.</p>
+</li>
+<li>
+<p><strong>Salvamento e Exclusão de Arquivos</strong>:</p>
+</li>
+<li>Após a manipulação dos dados, o código salva as alterações em um novo arquivo usando o método <code>save</code> da classe <code>Workbook</code>.</li>
+<li>
+<p>O arquivo original é excluído do sistema de arquivos usando o módulo <code>os</code>.</p>
+</li>
+<li>
+<p><strong>Manipulação de Dados</strong>:</p>
+</li>
+<li>Os dados lidos das planilhas são processados e filtrados conforme as condições especificadas no código.</li>
+<li>
+<p>As operações incluem filtragem com base em valores específicos, formatação de datas e exclusão de colunas indesejadas.</p>
+</li>
+<li>
+<p><strong>Integração com Outras Bibliotecas</strong>:</p>
+</li>
+<li>O código utiliza outras bibliotecas Python, como <code>pandas</code>, <code>os</code> e <code>tabulate</code>, para realizar operações adicionais de processamento de dados e manipulação de arquivos.</li>
+</ol>
+<p>Em resumo, a biblioteca Aspose.Cells oferece uma maneira eficaz e fácil de trabalhar com planilhas do Excel em Python, fornecendo uma ampla gama de recursos para criar, modificar e processar dados em arquivos do Excel.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
