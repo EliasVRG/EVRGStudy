@@ -12,6 +12,11 @@ Bem-vindo ao **EVRGStudy**, um espaço para documentar e compartilhar anotaçõe
 
 ---
 
+### ReactJS
+- [Estudos sobre Hooks](./REACT/hooks.md)
+
+---
+
 ### Python
 - [Estudos e Libs Python](./PYTHON/Estudos%20e%20Libs%20Python.md)
 - [Estudos sobre Diagrama de Classes](./PYTHON/Diagrama%20de%20Classes.md)
@@ -65,6 +70,10 @@ Bem-vindo ao **EVRGStudy**, um espaço para documentar e compartilhar anotaçõe
 
 ### Soft Skills
 - [Pontos Fortes](./SoftSkill/softskills.md)
+- [Componentes](./SoftSkill/componentizacao.md)
+- [Difernça de Assets e Public](./SoftSkill/diferencaAssestsEPublic.md)
+- [Tags de Versão](./SoftSkill/versionamento.md)
+- [Axios](./SoftSkill/HTTPUtilizandoOAXIOS.md)
 
 ---
 
